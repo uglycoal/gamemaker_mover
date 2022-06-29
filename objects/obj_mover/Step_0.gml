@@ -14,7 +14,7 @@ if (_obj != noone) {
 		//move if not pause place
 		if (!other._pause_place) {
 			if point_distance(x, y, xx, yy) > 1 { //if node is not reached
-				move_to(xx, yy, sp); //speed per node until end of length
+				move_towards_point(xx, yy, sp); //speed per node until end of length
 			}
 			else { //if node reached
 				if (!other._pause_node) {
